@@ -1,8 +1,7 @@
 
 public class Persona {
-
-    private byte elegido;//0=no tiene amigo, 1 = si tiene amigo
-    private byte cogido;//0= no esta asignado, 1 = esta asignado
+    private byte elegido;//0 = no tiene amigo, 1 = si tiene amigo
+    private byte cogido;//0 = no esta asignado a nadie, 1 = esta asignado a una persona
     private String correo;
     private String nombre;
 
@@ -55,5 +54,13 @@ public class Persona {
         this.nombre = nombre;
     }
 
-
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "elegido=" + elegido +
+                ", cogido=" + cogido +
+                ", correo='" + correo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
 }
