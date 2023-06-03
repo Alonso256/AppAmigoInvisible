@@ -15,7 +15,7 @@ public class Main {
     //ArrayList definitivo con la información de las personas que van a regalar y a quien
     static List<Persona> resul = new ArrayList<>();
 
-    //El número máximo de personas es n-1 (En este caso, al haber 4 personas, el máximo es 3)
+    //El número máximo de personas es n-1 (En este caso, al haber 3 personas, el máximo es 2)
     static int max = 2;
     static int min = 0;
 
@@ -77,26 +77,6 @@ public class Main {
             persona.setNombre(personas2.get(rnd).getNombre());
             resul.add(persona);
 
-          /*  System.out.println("PRINCIPAL");
-            for (Map.Entry<Integer, Persona> principal3 : personas.entrySet()) {
-                Persona person22 = principal3.getValue();
-
-                System.out.println(person22.toString());
-
-
-
-            }
-
-            System.out.println("PRINCIPAL2");
-
-            for (Map.Entry<Integer, Persona> principal4 : personas2.entrySet()) {
-                Persona person22 = principal4.getValue();
-
-                System.out.println(person22.toString());
-
-
-
-            }*/
 
         }
 
